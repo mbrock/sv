@@ -6,30 +6,40 @@
 * { box-sizing: border-box }
 
 body {
-  font-size: 22px; font-family: "times new roman"; line-height: 1.4;
+  font-size: 24px; font-family: "times new roman"; line-height: 1.45;
+  margin-bottom: 20ex;
 }
+
+article { margin: 4ex 2em 0 16em; }
+article { max-width: 27em }
 
 h2 a { color: #666 }
 
-h1, h2 { font-family: helvetica; }
+h1, h2, p a, li a { font-family: helvetica; }
+h1, p a, li a { text-transform: uppercase; letter-spacing: 2px; }
+p a, li a { font-size: 75%; padding: 6px; }
+p a:hover, li a:hover { background: purple; color: white; border-radius: 3px; }
+
+li a { margin-left: -6px; }
 
 h1 { margin: 0 0 2ex 0; font-size: 24px; }
 h2 { margin: 0 }
 h2 { display: inline-block; font-size: inherit; }
 
-aside time { display: block; color: #999; }
+aside time { display: block; color: #999; margin-top: 1ex; }
 
-ul { list-style: none; padding-left: 0; }
+ul, ol { padding-left: 40px; font-size: 90%; }
 a { text-decoration: none; }
 nav { float: right }
 
-article { margin-left: 16em; margin-top: 3ex; max-width: 27em }
 aside {
   position: absolute;
   left: 1em;
-  width: 10em;
+  width: 12em;
   text-align: right;
 }
+
+aside p { font-size: 70%; margin-left: 2em; }
 
 p { margin-top: 0; padding-top: 0; }
 
@@ -49,3 +59,5 @@ blockquote cite { display: block; text-align: right; }
 blockquote cite { margin-top: 1ex; }
 cite { font-style: normal; }
 cite a { color: #333; }
+
+article > blockquote { margin: 0 6ex; }

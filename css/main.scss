@@ -5,34 +5,37 @@
 * { box-sizing: border-box }
 
 body {
-  font: 24px/1.5 "times new roman";
+  font-family: "times new roman";
+  line-height: 1.5;
   margin: 0 2ex 20ex;
 }
 
+body { font-size: 22px }
+
 /* ARTICLE */
-article { margin: 2ex 2em 0 2em; }
+article { margin: 2ex 2em 0 2em }
 article { max-width: 27em }
-article { margin-left: auto; margin-right: auto; }
+article { margin-left: auto; margin-right: auto }
 
 /* SANS SERIFINESS */
-h1, h2, p a, li a {
-  font-family: helvetica; font-size: 85%; font-weight: bold;
+h1, h2, p a, li a, time {
+  font-family: helvetica; font-size: 85%; font-weight: bold
 }
 
 /* HEADERS */
-h1 { margin: 0 0 2ex 0; font-size: 24px; }
+h1 { margin: 0 0 2ex 0 }
 h2 { margin: 0 0 4ex 0 }
-h2 { display: inline-block; font-size: inherit; }
+h2 { display: inline-block }
 h2 a { color: #666 }
 
 /* POST DATE */
-time { display: block; color: #666; font-family: helvetica }
-time { float: right; font-weight: 300; font-size: 24px; }
-time { margin: 0 1em; }
+time { display: block; color: #666 }
+time { float: right; font-weight: 300 }
+time { margin: 0 1em }
 
 /* BLOCK TYPOGRAPHY */
-ul, ol { padding-left: 40px; font-size: 90%; }
-p { margin-top: 0; padding-top: 0; }
+ul, ol { padding-left: 40px; font-size: 90% }
+p { margin-top: 0; padding-top: 0 }
 
 /* POST LIST */
 .post-list {
@@ -41,14 +44,14 @@ p { margin-top: 0; padding-top: 0; }
 }
 
 /* BLOCKQUOTES */
-aside blockquote { margin: 0; font-size: 70%; }
-blockquote { font-size: 90%; color: #333; font-style: italic; }
-blockquote cite { display: block; text-align: right; }
-blockquote cite { margin-top: 1ex; }
-article > blockquote { margin: 0 6ex; }
+aside blockquote { margin: 0; font-size: 70% }
+blockquote { font-size: 90%; color: #333; font-style: italic }
+blockquote cite { display: block; text-align: right }
+blockquote cite { margin-top: 1ex }
+article > blockquote { margin: 0 6ex }
 
 /* ASIDES */
-aside p { font-size: 70%; }
+aside p { font-size: 70% }
 @media (max-width: 940px) {
   aside p {
     border: 1px solid #999;
@@ -66,14 +69,14 @@ aside p { font-size: 70%; }
     width: 12em;
     text-align: right;
   }
-  aside p { margin-left: 2em; }
-  article { margin-left: 16em; }
-  html { margin-top: 2ex; }
+  aside p { margin-left: 2em }
+  article { margin-left: 16em }
+  html { margin: 2ex 2ex 0 0 }
 }
 
 /* INLINE TYPOGRAPHY */
-cite { font-style: normal; }
-cite a { color: #333; }
-a { text-decoration: none; }
-a { color: darkblue; }
+cite { font-style: normal }
+cite a { color: #333 }
+a { text-decoration: none }
+a { color: darkblue }
 a:visited { color: purple }

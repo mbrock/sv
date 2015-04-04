@@ -2,8 +2,10 @@
 layout: default
 ---
 <header>
-  <h1>{{ page.title }}</h1>
+  <aside>
   <h2><a class="site-title" href="{{ site.baseurl }}/">mikael brockman</a></h2>
-  <time>{{ page.date | date: "%F" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</time>
+  </aside>
+  <time>{{ page.date | date: "%F" }}</time>
+  <h1>{{ page.title }}</h1>
 </header>
 {{ content }}

@@ -10,7 +10,7 @@ body {
   margin: 0 2ex 20ex;
 }
 
-body { font-size: 22px }
+body { font-size: 20px }
 
 /* ARTICLE */
 article { margin: 2ex 2em 0 2em }
@@ -34,21 +34,20 @@ time { float: right; font-weight: 300 }
 time { margin: 0 1em }
 
 /* BLOCK TYPOGRAPHY */
-ul, ol { padding-left: 40px; font-size: 90% }
-p { margin-top: 0; padding-top: 0 }
+ul, ol { padding-left: 40px; font-size: 90%; margin: 0 }
+p { margin-top: 0; padding-top: 0; margin-bottom: 1ex }
 
 /* POST LIST */
 .post-list {
-  border-top: 2px solid #333;
-  padding-top: 1ex;
+  font-size: 120%;
 }
 
 /* BLOCKQUOTES */
 aside blockquote { margin: 0; font-size: 70% }
-blockquote { font-size: 90%; color: #333; font-style: italic }
+blockquote { font-size: 90%; color: #333 }
 blockquote cite { display: block; text-align: right }
 blockquote cite { margin-top: 1ex }
-article > blockquote { margin: 0 6ex }
+article > blockquote { margin: 0 4ex }
 
 /* ASIDES */
 aside p { font-size: 70% }

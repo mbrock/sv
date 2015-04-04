@@ -1,42 +1,55 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
 * { box-sizing: border-box }
 
 body {
-  font-size: 24px; font-family: "times new roman"; line-height: 1.45;
-  margin-bottom: 20ex;
+  font: 24px/1.5 "times new roman";
+  margin: 0 2ex 20ex;
 }
 
-article { margin: 4ex 2em 0 2em; }
+/* ARTICLE */
+article { margin: 2ex 2em 0 2em; }
 article { max-width: 27em }
+article { margin-left: auto; margin-right: auto; }
 
+/* SANS SERIFINESS */
+h1, h2, p a, li a {
+  font-family: helvetica; font-size: 85%; font-weight: bold;
+}
+
+/* HEADERS */
+h1 { margin: 0 0 2ex 0; font-size: 24px; }
+h2 { margin: 0 0 4ex 0 }
+h2 { display: inline-block; font-size: inherit; }
 h2 a { color: #666 }
 
-h1, h2, p a, li a { font-family: helvetica; font-size: 85%; font-weight: bold; }
-/* h1, p a, li a { text-transform: uppercase; letter-spacing: 2px; } */
-/* p a, li a { font-size: 75%; padding: 6px; } */
-/* p a:hover, li a:hover { background: purple; color: white; border-radius: 3px; } */
-
-li a { margin-left: -6px; }
-
-h1 { margin: 0 0 2ex 0; font-size: 24px; }
-h2 { margin: 0 }
-h2 { display: inline-block; font-size: inherit; }
-
+/* POST DATE */
 time { display: block; color: #666; font-family: helvetica }
 time { float: right; font-weight: 300; font-size: 24px; }
 time { margin: 0 1em; }
 
+/* BLOCK TYPOGRAPHY */
 ul, ol { padding-left: 40px; font-size: 90%; }
-a { text-decoration: none; }
-nav { float: right }
+p { margin-top: 0; padding-top: 0; }
 
+/* POST LIST */
+.post-list {
+  border-top: 2px solid #333;
+  padding-top: 1ex;
+}
+
+/* BLOCKQUOTES */
+aside blockquote { margin: 0; font-size: 70%; }
+blockquote { font-size: 90%; color: #333; font-style: italic; }
+blockquote cite { display: block; text-align: right; }
+blockquote cite { margin-top: 1ex; }
+article > blockquote { margin: 0 6ex; }
+
+/* ASIDES */
+aside p { font-size: 70%; }
 @media (max-width: 940px) {
-  article { margin-left: auto; margin-right: auto; }
-
   aside p {
     border: 1px solid #999;
     padding: 1ex 1.3ex;
@@ -45,6 +58,7 @@ nav { float: right }
   }
 }
 
+/* BIG MONITORS */
 @media (min-width: 940px) {
   aside {
     position: absolute;
@@ -52,33 +66,14 @@ nav { float: right }
     width: 12em;
     text-align: right;
   }
-
   aside p { margin-left: 2em; }
   article { margin-left: 16em; }
+  html { margin-top: 2ex; }
 }
 
-aside p { font-size: 70%; }
-
-p { margin-top: 0; padding-top: 0; }
-
-.post-list {
-  border-top: 2px solid #333;
-  padding-top: 1ex;
-}
-
-h2 { margin-bottom: 4ex; }
-
-footer { color: #999; }
-
-aside blockquote { margin: 0; font-size: 70%; }
-
-blockquote { font-size: 90%; color: #333; font-style: italic; }
-blockquote cite { display: block; text-align: right; }
-blockquote cite { margin-top: 1ex; }
+/* INLINE TYPOGRAPHY */
 cite { font-style: normal; }
 cite a { color: #333; }
-
-article > blockquote { margin: 0 6ex; }
-
+a { text-decoration: none; }
 a { color: darkblue; }
 a:visited { color: purple }

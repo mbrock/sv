@@ -21,10 +21,13 @@ blockquote {
   font-size: 85%;
 }
 
-html { font-size: 22px }
-@media (max-width: 1200px) { html { font-size: 20px } }
-@media (max-width: 1100px) { html { font-size: 18px } }
-@media (max-width: 1000px) { html { font-size: 16px } }
+html { font-size: 24px }
+@media (max-width: 1400px) { html { font-size: 23px } }
+@media (max-width: 1300px) { html { font-size: 22px } }
+@media (max-width: 1200px) { html { font-size: 21px } }
+@media (max-width: 1100px) { html { font-size: 20px } }
+@media (max-width: 1000px) { html { font-size: 19px } }
+@media (max-width: 940px) { html { font-size: 17px } }
 
 h1, h2, time { font-size: 1rem }
 article > p a { font-size: 0.9rem; }
@@ -94,7 +97,7 @@ aside p:last-child { margin-bottom: 0; }
     text-align: right;
   }
   aside p { margin-left: 2em }
-  article { margin-left: 16em }
+  article { margin-left: 18em }
   html { margin: 2ex 2ex 0 0 }
   article > blockquote { border-left: 4px solid #ede; }
 }

@@ -64,7 +64,6 @@ blockquote cite { margin-top: 1ex }
 article > blockquote {
   padding: 0 0 0 2ex;
   margin: 0;
-  margin-left: 1px;
 }
 
 /* ASIDES */
@@ -99,7 +98,10 @@ aside p:last-child { margin-bottom: 0; }
   aside p { margin-left: 2em }
   article { margin-left: 18em }
   html { margin: 2ex 2ex 0 0 }
-  article > blockquote { border-left: 4px solid #ede; }
+  article > blockquote {
+    border-left: 6px solid #ede;
+    margin-left: -26px;
+  }
 }
 
 /* INLINE TYPOGRAPHY */

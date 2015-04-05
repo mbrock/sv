@@ -5,9 +5,11 @@
 * { box-sizing: border-box }
 
 body {
+  background: #fff8ff;
   font-family: "times new roman", serif;
   line-height: 1.55;
-  margin: 0 2ex 20ex;
+  margin: 0 2ex 2ex;
+  color: #333
 }
 
 h1, h2, p a, li a, time {
@@ -37,7 +39,8 @@ hr { border: none; text-align: center; color: #444; margin: 2ex }
 
 /* HEADERS */
 h1 { margin: 0 0 1ex 0 }
-h2 { margin: 0 0 2ex 0 }
+h2 { margin: 2ex 0 1ex 0 }
+aside > h2 { margin-top: 0; }
 h2 { display: inline-block }
 h2 a { color: #666 }
 
@@ -63,16 +66,23 @@ article > blockquote {
 
 /* ASIDES */
 aside { font-family: "PT Sans" }
-aside p, aside blockquote { font-size: 80% }
+aside.intro p { font-size: 0.85rem }
+aside p, aside blockquote { font-size: 0.75rem }
 aside p:last-child { margin-bottom: 0; }
 
 @media (max-width: 940px) {
   aside:not(.plain):not(.intro) {
-    margin: 3ex 12ex;
+    margin: 1ex 2ex;
     padding: 1ex 1.3ex;
+//    background: #ede;
+    float: right;
+    width: 12em;
   }
 
-  aside.intro { margin: 2ex 3ex }
+  aside.intro {
+    margin: 2ex 3ex;
+    padding: 1ex 1.3ex;
+  }
 }
 
 /* BIG MONITORS */
@@ -95,3 +105,18 @@ cite a { color: #333 }
 a { text-decoration: none }
 a { color: darkblue }
 a:visited { color: purple }
+
+footer {
+  font-family: "PT Sans", helvetica, sans-serif;
+  line-height: 1.8;
+  margin: 4rem auto 0;
+  color: #aaa;
+  font-size: 0.7rem;
+  text-align: center;
+  width: 20em;
+}
+
+footer a {
+  font-weight: bold;
+  color: #999;
+}

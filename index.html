@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<aside>
+<aside class=plain>
 <h2>mikael brockman</h2>
 </aside>
 <p>Här är en text som jag har skrivit.
-<aside>
+<aside class=plain>
 <blockquote>
 It rains during the morning. No visitors today. I feel lonely and
 amuse myself by writing at random.
@@ -17,9 +17,7 @@ amuse myself by writing at random.
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </li>
   {% endfor %}
 </ul>

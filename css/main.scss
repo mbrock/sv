@@ -5,22 +5,35 @@
 * { box-sizing: border-box }
 
 body {
-  font-family: "times new roman";
-  line-height: 1.5;
+  font-family: "times new roman", serif;
+  line-height: 1.55;
   margin: 0 2ex 20ex;
 }
 
-body { font-size: 18px }
+h1, h2, p a, li a, time {
+  font-family: "PT Sans", helvetica, sans-serif; font-weight: bold
+}
+
+blockquote {
+  font-family: "PT Sans", helvetica, sans-serif;
+  font-size: 85%;
+}
+
+html { font-size: 22px }
+@media (max-width: 1200px) { html { font-size: 20px } }
+@media (max-width: 1100px) { html { font-size: 18px } }
+@media (max-width: 1000px) { html { font-size: 16px } }
+
+h1, h2, time { font-size: 1rem }
+article > p a { font-size: 0.9rem; }
 
 /* ARTICLE */
 article { margin: 2ex 2em 0 2em }
-article { max-width: 27em }
+article { max-width: 30em }
 article { margin-left: auto; margin-right: auto }
 
-/* SANS SERIFINESS */
-h1, h2, p a, li a, time {
-  font-family: helvetica; font-size: 85%; font-weight: bold
-}
+hr::before { content: "\2600" }
+hr { border: none; text-align: center; color: #444; margin: 2ex }
 
 /* HEADERS */
 h1 { margin: 0 0 1ex 0 }
@@ -35,42 +48,45 @@ time { margin: 0 1em }
 
 /* BLOCK TYPOGRAPHY */
 ul, ol { padding-left: 40px; font-size: 90%; margin: 0 }
-p { margin-top: 0; padding-top: 0; margin-bottom: 1ex }
-
-/* POST LIST */
-.post-list {
-  font-size: 120%;
-}
+p { margin-top: 0; padding-top: 0; margin-bottom: 2ex }
 
 /* BLOCKQUOTES */
-aside blockquote { margin: 0; font-size: 70% }
-blockquote { font-size: 90%; color: #333 }
+aside blockquote { margin: 0; font-style: italic }
+blockquote { color: #333 }
 blockquote cite { display: block; text-align: right }
 blockquote cite { margin-top: 1ex }
-article > blockquote { margin: 2ex 4ex }
+article > blockquote {
+  padding: 0 0 0 2ex;
+  margin: 0;
+  margin-left: 1px;
+}
 
 /* ASIDES */
-aside p { font-size: 70% }
+aside { font-family: "PT Sans" }
+aside p, aside blockquote { font-size: 80% }
+aside p:last-child { margin-bottom: 0; }
+
 @media (max-width: 940px) {
-  aside p {
-    border: 1px solid #999;
+  aside:not(.plain):not(.intro) {
     margin: 3ex 12ex;
     padding: 1ex 1.3ex;
-    background: rgba(255, 0, 200, 0.1);
   }
+
+  aside.intro { margin: 2ex 3ex }
 }
 
 /* BIG MONITORS */
 @media (min-width: 940px) {
   aside {
     position: absolute;
-    left: 1em;
-    width: 12em;
+    left: 2em;
+    width: 13em;
     text-align: right;
   }
   aside p { margin-left: 2em }
   article { margin-left: 16em }
   html { margin: 2ex 2ex 0 0 }
+  article > blockquote { border-left: 4px solid #ede; }
 }
 
 /* INLINE TYPOGRAPHY */
